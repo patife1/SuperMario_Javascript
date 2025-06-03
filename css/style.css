@@ -24,30 +24,13 @@
     width: 150px;
     position: absolute;
     bottom: 0;
-    animation: jump 500ms infinite ease-out;
+    transition: bottom 0.1s;
 }
 
 .jump {
-    animation: jump 500ms ease-out;    /* ...código existente... */
-    .mario {
-        position: absolute;
-        bottom: 0;
-        /* ajuste conforme necessário */
-        transition: bottom 0.1s;
-    }
-    
-    .jump {
-        animation: jump-animation 0.5s;
-    }
-    
-    @keyframes jump-animation {
-        0% { bottom: 0; }
-        40% { bottom: 120px; } /* altura do pulo, ajuste se quiser */
-        60% { bottom: 120px; }
-        100% { bottom: 0; }
-    }
-    /* ...código existente... */
+    animation: jump 500ms ease-out;
 }
+
 @keyframes pipe-animation {
     from {
         right: -80px;
